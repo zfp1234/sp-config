@@ -1,6 +1,11 @@
 spring:
   application:
     name: zuul
+  rabbitmq:
+    host: 192.168.203.131
+    port: 5672
+    username: admin
+    password: admin
     
 server:
   port: 3001
@@ -18,7 +23,7 @@ eureka:
 
 zuul:
   retryable: true 
-#重试参数业务有默认值,可以不加
+#閲嶈瘯鍙傛暟涓氬姟鏈夐粯璁ゅ��,鍙互涓嶅姞
 ribbon:
   ConnectTimeout: 1000
   ReadTimeout: 1000
